@@ -5,7 +5,7 @@ import RaisedButton from 'material-ui/RaisedButton';
 import TextField from 'material-ui/TextField';
 
 import ConsensysLogo from './images/consensysLogo.svg';
-import TorontoSilhouette from './images/torontoSilhouette.png';
+// import TorontoSilhouette from './images/torontoSilhouette.png';
 import LinkedInIcon from './images/linkedinIcon.svg';
 
 import {amber50} from 'material-ui/styles/colors';
@@ -74,7 +74,7 @@ const styles = {
    bottom: 0,
    right: 0,
    marginRight: '1%',
-   fontSize: '1.8vh',
+   fontSize: '2vh',
  },
  inputStyle: {
    color: amber50,
@@ -121,7 +121,10 @@ class App extends Component {
     return (
       <div style={styles.referenceStyle}>
         <img className="Image" style={styles.logoStyle} src={ConsensysLogo} alt="ConsenSys Logo"/>
-        <img style={styles.torontoStyle} src={TorontoSilhouette} alt="ConsenSys Logo"/>
+{/*
+  <img style={styles.torontoStyle} src={TorontoSilhouette} alt="ConsenSys Logo"/>
+  */}
+
         <Particles style={{position: 'absolute'}}/>
         <div style={styles.textStyle}>
           <h1 style={styles.headerStyle}>CONSENSYS TORONTO</h1>
@@ -138,7 +141,7 @@ class App extends Component {
               underlineFocusStyle={styles.inputStyle}
               value={this.state.value}
               onChange={this.handleChange}
-              autocomplete="off"
+              autoComplete="off"
             />
             <br/>
             <RaisedButton label="Sign Up" primary={true}

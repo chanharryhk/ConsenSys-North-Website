@@ -4,13 +4,13 @@ import Snackbar from 'material-ui/Snackbar';
 import RaisedButton from 'material-ui/RaisedButton';
 import TextField from 'material-ui/TextField';
 
-import ConsensysLogo from './images/consensysLogo.svg';
+// import ConsensysLogo from 'images/consensysLogo.svg';
 // import TorontoSilhouette from './images/torontoSilhouette.png';
-import LinkedInIcon from './images/linkedinIcon.svg';
 
 import {amber50} from 'material-ui/styles/colors';
 
 import './App.css';
+const LinkedInIcon = 'https://cdn3.iconfinder.com/data/icons/social-1/100/linkedin-128.png';
 
 //<img style={{position: 'absolute'}} src={ConsensysLogo} alt="ConsenSys Logo" height="100" width="100"/>
 
@@ -120,7 +120,7 @@ class App extends Component {
   render() {
     return (
       <div style={styles.referenceStyle}>
-        <img className="Image" style={styles.logoStyle} src={ConsensysLogo} alt="ConsenSys Logo"/>
+        <img className="Image" style={styles.logoStyle} src={"https://consensys.net/img/logo.svg"} alt="ConsenSys Logo"/>
 {/*
   <img style={styles.torontoStyle} src={TorontoSilhouette} alt="ConsenSys Logo"/>
   */}

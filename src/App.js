@@ -131,7 +131,6 @@ class App extends Component {
               type="email"
               name="EMAIL"
               className="required email"
-              className="emailInput"
               id="mce-EMAIL"
               floatingLabelText="Email"
               hintText="canada@consensys.net"
@@ -139,7 +138,7 @@ class App extends Component {
               underlineFocusStyle={styles.inputStyle}
               value={this.state.value}
               onChange={this.handleChange}
-              autoComplete="off"
+              autocomplete="off"
             />
             <br/>
             <RaisedButton label="Sign Up" primary={true}

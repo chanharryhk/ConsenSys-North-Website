@@ -1,6 +1,9 @@
 {
   "main.css": "static/css/main.bba560cd.css",
   "main.css.map": "static/css/main.bba560cd.css.map",
-  "main.js": "static/js/main.bb08337f.js",
-  "main.js.map": "static/js/main.bb08337f.js.map"
+  "main.js": "static/js/main.19cabcae.js",
+  "main.js.map": "static/js/main.19cabcae.js.map",
+  "static/media/idea.svg": "static/media/idea.299959ec.svg",
+  "static/media/network.svg": "static/media/network.4d5bcbea.svg",
+  "static/media/presentation.svg": "static/media/presentation.fbdf63b9.svg"
 }

@@ -46,6 +46,18 @@ const styles = {
     fontWeight: '400',
     fontSize: '5vh',
   },
+  dividerLeftStyle: {
+    height: 8,
+    backgroundColor: '#72BCD4',
+    width: 250,
+    float: 'right'
+  },
+  dividerRightStyle: {
+    height: 8,
+    backgroundColor: '#72BCD4',
+    width: 250,
+    float: 'left'
+  },
 }
 
 class PitchNight extends Component {
@@ -61,9 +73,12 @@ class PitchNight extends Component {
             <Grid.Column textAlign='right'>
               <div style={styles.gridSubSectionLeft}>
                 <h2 style={styles.subHeaderStyle}>What is it?</h2>
-                <Divider clearing/>
-                <Container>
-                  <p>Members' funds remain under their control in decentralized smart contracts on the blockchain.</p>
+                <Divider style={styles.dividerLeftStyle} />
+                <Container style={{marginTop: 60}}>
+                  <p>
+                    Join us in Toronto on ConsenSys Blockchain <b>Pitch Night</b>!
+                    <br/><br/>
+                    This is an interactive and fun pitch event where entrepreneurs showcase their ideas or companies to ConsenSys, get valuable feedback and compete for a chance get seed funding.</p>
                 </Container>
               </div>
             </Grid.Column>
@@ -74,14 +89,19 @@ class PitchNight extends Component {
 
           <Grid stackable columns={2}>
             <Grid.Column>
-              <Image floated="right" height='150' width='150' src={IdeaIcon} />
+              <Image floated="right" height='150' width='150' src={PresentIcon} />
             </Grid.Column>
             <Grid.Column textAlign='left'>
               <div style={styles.gridSubSectionRight}>
                 <h2 style={styles.subHeaderStyle}>Application</h2>
-                <Divider />
-                <Container>
-                  <p>Members' funds remain under their control in decentralized smart contracts on the blockchain.</p>
+                <Divider style={styles.dividerRightStyle}/>
+                <Container style={{marginTop: 60}}>
+                  <p>
+                    Please email us your business plan highlighting:
+                    <br/><br/>
+                    What does your company do? What problem does it solve? What’s the business model? What’s the market?
+                    <br/><br/>
+                    We also welcome you to share your financial plan!</p>
                 </Container>
               </div>
             </Grid.Column>
@@ -91,14 +111,18 @@ class PitchNight extends Component {
             <Grid.Column textAlign='right'>
               <div style={styles.gridSubSectionLeft}>
                 <h2 style={styles.subHeaderStyle}>Pitch</h2>
-                <Divider />
-                <Container>
-                  <p>Members' funds remain under their control in decentralized smart contracts on the blockchain.</p>
+                <Divider style={styles.dividerLeftStyle} />
+                <Container style={{marginTop: 60}}>
+                  <p>
+                    Come watch pitches from up-and-coming companies and mingle with industry leaders, entrepreneurs, and investors from the community.
+                    <br/><br/>
+                    Meet the founders and see their products up and close.
+                  </p>
                 </Container>
               </div>
             </Grid.Column>
             <Grid.Column>
-              <Image height='150' width='150' src={PresentIcon} />
+              <Image height='150' width='150' src={IdeaIcon} />
             </Grid.Column>
           </Grid>
         </div>

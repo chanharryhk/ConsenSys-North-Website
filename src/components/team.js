@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Grid, Card, Icon, Image } from 'semantic-ui-react'
+import { Grid, Card, Icon, Image, Divider} from 'semantic-ui-react'
+// import Divider from 'material-ui/Divider';
 
 const styles = {
   teamContainerStyle: {
@@ -7,11 +8,19 @@ const styles = {
     padding: 80
   },
   headerStyle: {
-    marginBottom: 75,
     fontWeight: '400',
     fontSize: 30,
     textAlign: 'center',
   },
+  dividerStyle: {
+    height: 8,
+    backgroundColor: '#72BCD4',
+    maxWidth: 250,
+    margin: 'auto'
+  },
+  teamGridStyle: {
+    marginTop: 80,
+  }
 }
 
 class Team extends Component {
@@ -19,7 +28,8 @@ class Team extends Component {
     return(
       <div style={styles.teamContainerStyle}>
         <h4 style={styles.headerStyle}>Toronto Team</h4>
-        <Grid stackable textAlign='center' columns={4}>
+        <Divider hidden style={styles.dividerStyle}/>
+        <Grid style={styles.teamGridStyle} stackable textAlign='center' columns={4}>
           <Grid.Column>
             <Card centered>
               <Image src='https://media.licdn.com/media/AAEAAQAAAAAAAAgYAAAAJGVhZWFlNTVmLTg5ODEtNDgwNC05MWU0LWE1Nzk5NzM4ZDQ5Mg.jpg' />

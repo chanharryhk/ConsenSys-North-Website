@@ -9,8 +9,9 @@ import Divider from 'material-ui/Divider';
 import SignUpForm from './components/signUpForm.js';
 import PitchNight from './components/pitch.js';
 import Background from './components/background.js';
-import ContactBar from './components/contactBar.js';
+import EndBar from './components/endBar.js';
 import Team from './components/team.js';
+import EventDetail from './components/eventDetail.js';
 import './App.css';
 
 const LinkedInIcon = 'https://cdn0.iconfinder.com/data/icons/typicons-2/24/social-linkedin-128.png';
@@ -45,7 +46,7 @@ const styles = {
  },
  titleStyle: {
    fontWeight: '400',
-   fontSize: '10vh',
+   fontSize: '7vmax',
    textAlign: 'center',
  },
  subtitleStyle: {
@@ -56,7 +57,8 @@ const styles = {
  headerContainerStyle: {
    margin: '50',
    marginTop: '200',
-   marginBottom: '100'
+   marginBottom: '100',
+   color: 'whitesmoke',
  },
  consensysTextStyle: {
    bottom: 0,
@@ -103,7 +105,13 @@ class App extends Component {
         <div style={styles.gridStyle}>
           <PitchNight/>
         </div>
+        <EventDetail/>
         <Team/>
+        <div style={{marginTop: 75, marginBottom: 75}}>
+
+        </div>
+
+        <EndBar/>
       </div>
     );
   }

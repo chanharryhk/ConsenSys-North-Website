@@ -87,7 +87,7 @@ class SignUpForm extends Component {
 
   render() {
     return (
-      <div>
+      <div >
       {/*
 
       */}

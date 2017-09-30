@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import { Grid, Card, Icon, Image, Divider} from 'semantic-ui-react'
-// import Divider from 'material-ui/Divider';
+
 
 const styles = {
   teamContainerStyle: {
     backgroundColor: '#F5F5F5',
-    padding: 80
+    padding: 40,
+    paddingBottom: 100,
   },
   headerStyle: {
     fontWeight: '400',
@@ -19,7 +20,7 @@ const styles = {
     margin: 'auto'
   },
   teamGridStyle: {
-    marginTop: 80,
+    marginTop: 40,
   }
 }
 

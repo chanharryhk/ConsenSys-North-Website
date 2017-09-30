@@ -31,7 +31,7 @@ class Background extends Component {
     return(
       <div style={styles.referenceStyle}>
         <img className="Image" style={styles.logoStyle} src={"https://consensys.net/img/logo.svg"} alt="ConsenSys Logo"/>
-        <Particles style={{position: 'absolute'}}/>
+        <Particles/>
       </div>
     )
   }
